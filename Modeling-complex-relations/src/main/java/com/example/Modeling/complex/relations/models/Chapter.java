@@ -2,13 +2,15 @@ package com.example.Modeling.complex.relations.models;
 
 import jakarta.persistence.*;
 import java.util.List;
+import java.util.Set;
+
 import lombok.*;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 @Table(name = "chapter")
+@NoArgsConstructor
 public class Chapter {
 
     @Id
@@ -21,11 +23,18 @@ public class Chapter {
     @JoinColumn(name="president_id")
     private Member president;
 
-    @ManyToMany
-    @JoinTable(
-            name = "chapter_assignation",
-            joinColumns = { @JoinColumn(name = "chapter_id")},
-            inverseJoinColumns = { @JoinColumn(name = "member_id")}
-    )
+    @ManyToOne
+    @JoinColumn(name="association_id")
+    private Association association;
+
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Member> list;
+
+    public Chapter(String name, String district, Member president, Association association, List<Member> list) {
+        this.name = name;
+        this.district = district;
+        this.president = president;
+        this.association = association;
+        this.list = list;
+    }
 }

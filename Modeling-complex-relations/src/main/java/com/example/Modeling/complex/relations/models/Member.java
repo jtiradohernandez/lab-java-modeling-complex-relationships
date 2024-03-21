@@ -10,9 +10,9 @@ import java.util.Date;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 @Table(name = "member")
+@NoArgsConstructor
 public class Member {
 
     @Id
@@ -22,4 +22,16 @@ public class Member {
     @Enumerated (EnumType.STRING)
     private MemberStatus status;
     private Date renewalDate;
+
+    @ManyToOne
+    private Chapter chapter;
+
+    public Member(String name, MemberStatus status, Date renewalDate, Chapter chapter) {
+        this.name = name;
+        this.status = status;
+        this.renewalDate = renewalDate;
+        this.chapter = chapter;
+    }
 }
+
+
