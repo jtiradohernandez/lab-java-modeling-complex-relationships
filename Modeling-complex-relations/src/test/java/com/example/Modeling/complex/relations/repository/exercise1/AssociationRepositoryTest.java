@@ -1,8 +1,8 @@
-package com.example.Modeling.complex.relations.repository;
+package com.example.Modeling.complex.relations.repository.exercise1;
 
-import com.example.Modeling.complex.relations.models.Association;
-import com.example.Modeling.complex.relations.models.Chapter;
-import com.example.Modeling.complex.relations.models.Member;
+import com.example.Modeling.complex.relations.models.exercise1.Association;
+import com.example.Modeling.complex.relations.models.exercise1.Chapter;
+import com.example.Modeling.complex.relations.repository.exercise1.AssociationRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

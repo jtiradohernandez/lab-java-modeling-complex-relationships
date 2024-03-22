@@ -1,4 +1,4 @@
-package com.example.Modeling.complex.relations.models;
+package com.example.Modeling.complex.relations.models.exercise1;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
-import java.util.Set;
 
 
 @Getter

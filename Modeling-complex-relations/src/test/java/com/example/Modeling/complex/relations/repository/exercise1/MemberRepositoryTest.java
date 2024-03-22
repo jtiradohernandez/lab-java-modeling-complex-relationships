@@ -1,20 +1,18 @@
-package com.example.Modeling.complex.relations.repository;
+package com.example.Modeling.complex.relations.repository.exercise1;
 
 import com.example.Modeling.complex.relations.enums.MemberStatus;
-import com.example.Modeling.complex.relations.models.Association;
-import com.example.Modeling.complex.relations.models.Chapter;
-import com.example.Modeling.complex.relations.models.Member;
+import com.example.Modeling.complex.relations.models.exercise1.Chapter;
+import com.example.Modeling.complex.relations.models.exercise1.Member;
+import com.example.Modeling.complex.relations.repository.exercise1.AssociationRepository;
+import com.example.Modeling.complex.relations.repository.exercise1.ChapterRepository;
+import com.example.Modeling.complex.relations.repository.exercise1.MemberRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.sql.Time;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,7 +1,8 @@
-package com.example.Modeling.complex.relations.models;
+package com.example.Modeling.complex.relations.models.exercise1;
 
 
 import com.example.Modeling.complex.relations.enums.MemberStatus;
+import com.example.Modeling.complex.relations.models.exercise1.Chapter;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -33,5 +34,4 @@ public class Member {
         this.chapter = chapter;
     }
 }
-
 
