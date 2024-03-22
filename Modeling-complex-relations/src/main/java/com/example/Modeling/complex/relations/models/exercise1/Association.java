@@ -20,7 +20,7 @@ public class Association {
 
     private String name;
 
-    @OneToMany(mappedBy="association")
+    @OneToMany(mappedBy="association", fetch = FetchType.LAZY)
     private List<Chapter> listOfChapters;
 
     public Association(String name, List<Chapter> listOfChapters) {
